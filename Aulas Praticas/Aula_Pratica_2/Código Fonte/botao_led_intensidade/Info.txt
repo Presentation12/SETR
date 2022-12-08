@@ -1,0 +1,2 @@
+Baseado no programa anterior, proceda ao controlo da intensidade de luz do led 
+utilizando o sinal de PWM (Pulse Width Modulation) disponível.

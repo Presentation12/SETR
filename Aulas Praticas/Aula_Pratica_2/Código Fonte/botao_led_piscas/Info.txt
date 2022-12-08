@@ -1,0 +1,4 @@
+Botão para controlo de led
+- Programa anterior alterado para piscar led pisque 3 vezes com um intervalo de 0,5 s.
+- Estado do botão de pressão no monitor série.
+- Registo do tempo em segundos, desde o início do programa em que o botão é pressionado - monitor série.
