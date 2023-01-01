@@ -1,0 +1,39 @@
+const int ledPin = 2;
+const int inputPin = 7;
+int state = LOW;
+int val = o;
+
+void setup() 
+{
+	pinMode(ledPin, OUTPUT);
+	pinMode(inputPin, INPUT);
+	Serial.begin(9600);
+}
+
+void loop()
+{
+	int val = digitalRead(inputPin);
+	if(val == HIGH)
+	{
+		digitalWrite(ledPin, HIGH);
+		delay(500);
+		if(state == LOW)
+		{
+			Serial.print("Movimento detetado - Led ligado -> ");
+			Serial.println(millis());
+			state = HIGH;	
+		}
+	}
+	else
+	{
+		digitalWrite(led, LOW);
+		delay(500);
+
+		if(state == HIGH)
+		{
+			Serial.print("Led desligado -> ");
+			Serial.println(millis());
+			state = LOW;
+		}
+	}
+}
